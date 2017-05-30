@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <listener>
+    <listener-class>org.wso2.carbon.identity.cloud.sample.PlanYourTripContextListener</listener-class>
+  </listener>
+
+  <context-param>
+    <param-name>serverURL</param-name>
+    <param-value>https://gateway.api.cloud.wso2.com:443/t/wso2org/travel-destination</param-value>
+  </context-param>
+  <context-param>
+    <param-name>tokenURL</param-name>
+    <param-value>https://gateway.api.cloud.wso2.com:443/token</param-value>
+  </context-param>
+  <context-param>
+    <param-name>consumerKey</param-name>
+    <param-value>YOUR-CONSUMER-KEY</param-value>
+  </context-param>
+  <context-param>
+    <param-name>consumerSecret</param-name>
+    <param-value>YOUR-CONSUMER-SECRET</param-value>
+  </context-param>
+
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

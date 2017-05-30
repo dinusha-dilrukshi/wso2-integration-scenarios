@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- # Copyright (c) 2015, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+        # # Licensed under the Apache License, Version 2.0 (the "License"); # you
+        may not use this file except in compliance with the License. # You may obtain
+        a copy of the License at # # http://www.apache.org/licenses/LICENSE-2.0 #
+        # Unless required by applicable law or agreed to in writing, software # distributed
+        under the License is distributed on an "AS IS" BASIS, # WITHOUT WARRANTIES
+        OR CONDITIONS OF ANY KIND, either express or implied. # See the License for
+        the specific language governing permissions and # limitations under the License. -->
+<project>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.wso2.carbon.identity.cloud.webapp.sample</groupId>
+    <artifactId>plan-your-trip</artifactId>
+    <packaging>war</packaging>
+    <version>2</version>
+    <name>Plan Your Trip Webapp</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.jsontoken</groupId>
+            <artifactId>jsontoken</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>2.26.1.wso2v3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents.wso2</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.1.1-wso2v1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>wso2-nexus</id>
+            <name>WSO2 internal Repository</name>
+            <url>http://maven.wso2.org/nexus/content/groups/wso2-public/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+        <repository>
+            <id>wso2.releases</id>
+            <name>WSO2 internal Repository</name>
+            <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

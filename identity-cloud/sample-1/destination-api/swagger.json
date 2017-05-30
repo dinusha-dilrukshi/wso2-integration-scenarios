@@ -1,0 +1,1 @@
+{"swagger":"2.0","paths":{"/route":{"get":{"responses":{"200":{"description":""}},"x-auth-type":"Application & Application User","x-throttling-tier":"Unlimited"}}},"info":{"title":"DestinationAPI2","version":"1.0.0"}}
