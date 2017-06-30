@@ -33,7 +33,8 @@ the webapps directory of your servlet container OR deploy it in Integration Clou
 4. To check whether Web App has been deployed properly, enter the web app URL. You should be presented the login screen
  of the plan your trip webapp.
 
-5. Login to the Identity Cloud https://identity.cloud.wso2.com/admin and follow steps given in blog post - to
+5. Login to the Identity Cloud https://identity.cloud.wso2.com/admin and follow steps given in blog post - 
+http://dinushasblog.blogspot.com/2017/05/configure-single-sign-on-sso-for-web.html to
 configure SSO for App and use JWT Bear Grant to get access token to consume API.
 
 

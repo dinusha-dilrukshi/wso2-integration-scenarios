@@ -51,12 +51,12 @@
     },
     "ssoConfiguration": {
         "enabled": true,
-        "issuer": "publisher2",
+        "issuer": "publisher1",
         "identityProviderURL": "https://localhost:9445/samlsso",
         "keyStorePassword": "wso2carbon",
         "identityAlias": "wso2carbon",
         "responseSigningEnabled": "true",
-        "publisherAcs": "https://appm.demo.wso2:9444/publisher/acs",
+        "publisherAcs": "https://appm.wso2.com/publisher/acs",
         "keyStoreName": "/repository/resources/security/wso2carbon.jks"
     },
     "constants" :{

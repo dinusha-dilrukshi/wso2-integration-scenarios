@@ -17,12 +17,12 @@
 
     "ssoConfiguration": {
         "enabled": true,
-        "issuer": "store2",
+        "issuer": "store1",
         "identityProviderURL": "https://localhost:9445/samlsso",
         "keyStorePassword": "wso2carbon",
         "identityAlias": "wso2carbon",
         "responseSigningEnabled": "true",
-        "storeAcs" : "https://appm.demo.wso2:9444/store/acs",
+        "storeAcs" : "https://appm.wso2.com/store/acs",
         "keyStoreName": "/repository/resources/security/wso2carbon.jks"
     },
 
