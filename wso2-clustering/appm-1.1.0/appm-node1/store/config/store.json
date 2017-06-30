@@ -1,0 +1,37 @@
+{
+    "assetsUrlPrefix": "/assets",
+    "extensionsUrlPrefix": "/extensions",
+    "subscriptionsUrlPrefix": "/subscriptions",
+    "tenantConfigs": "/_system/config/store/configs/store.json",
+    "tenantedUrlPrefix" : "/t",
+    "socialCommentsEnable": true,
+    "cached": false,
+    "server": {
+        "https": "%https.host%/admin",
+        "http": "%http.host%"
+    },
+
+    "lifeCycleBehaviour":{
+        "visibleIn":["Published"]
+    },
+
+    "ssoConfiguration": {
+        "enabled": true,
+        "issuer": "store1",
+        "identityProviderURL": "https://localhost:9445/samlsso",
+        "keyStorePassword": "wso2carbon",
+        "identityAlias": "wso2carbon",
+        "responseSigningEnabled": "true",
+        "storeAcs" : "https://appm.demo.wso2:9443/store/acs",
+        "keyStoreName": "/repository/resources/security/wso2carbon.jks"
+    },
+
+    "pagination": {
+        "PAGE_SIZE" : 12,
+        "TOP_ASSET_PAGE_SIZE" : 8
+    },
+  "permissions": {
+    "webapp_subscribe": "/permission/admin/manage/webapp/subscribe",
+    "mobileapp_install": "/permission/admin/manage/mobileapp/subscribe"
+  }
+}
